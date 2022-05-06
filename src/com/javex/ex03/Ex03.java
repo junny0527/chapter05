@@ -20,7 +20,7 @@ public class Ex03 {
 		List<Person> pList = new ArrayList<Person>();
 
 		InputStream in = new FileInputStream("C:\\javaStudy\\file\\PhoneDB3.txt");
-		InputStreamReader isr = new InputStreamReader(in);
+		InputStreamReader isr = new InputStreamReader(in,"UTf-8");
 		BufferedReader br = new BufferedReader(isr);
 
 		while (value) {
@@ -30,9 +30,9 @@ public class Ex03 {
 				break;
 			}
 			String[] data = str.split(",");
-			Person curr = new Person(data[0], data[1], data[2]);
-			pList.add(curr);
-			curr.printDB();
+			Person kbj = new Person(data[0], data[1], data[2]);
+			pList.add(kbj);
+			kbj.printDB();
 		}
 
 		System.out.println("이름을 입력하세요.");

@@ -16,7 +16,7 @@ public class Ex01 {
 		List<Person> pList = new ArrayList<Person>();
 
 		InputStream in = new FileInputStream("C:\\javaStudy\\file\\PhoneDB1.txt");
-		InputStreamReader isr = new InputStreamReader(in);
+		InputStreamReader isr = new InputStreamReader(in,"UTf-8");
 		BufferedReader br = new BufferedReader(isr);
 
 		while (value) {
